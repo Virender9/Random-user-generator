@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #9384D1;
+    display: grid;
+    place-items:center;
+    border: 40px solid #C9A7EB;
+    outline: 12px solid #fff;
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    background-color: #C9A7EB;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    outline: 1px solid #fff;
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    background-color: #ADE4DB;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 12px;
+}
+
+.img_container{
+    width: 140px;
+    height: 140px;
+    background-color: #dcedea;
+    z-index: 99;
+    margin: -80px auto auto auto;
+    border: 10px solid #ADE4DB;
+    outline: none;
+    border-radius: 65px;
+    text-align: center;
+}
+
+.img_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+button{
+    margin-top: 380px;
+    padding: 20px;
+    width: 340px;
+    height: 20px;
+    background: linear-gradient(255deg, #ADE4DB, #9384D1);
+    z-index: 999;
+    /* position: absolute; */
+    font-size: 24px;
+    text-align: center;
+    /* outline: none; */
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button p{
+    margin-top: -12px;
+    color: #812a;
+}
+
+button:hover , button p:hover{
+    background: white;
+    transition-delay: .1s;
+}
+
+button:checked{
+    animation: ease-in-out;
+    transform:scale(2,0.5);
+    animation-delay: 0.5s;
+    margin-top: 380px;
+    padding: 20px;
+    width: 340px;
+    height: 20px;
+    background: linear-gradient(255deg, #ADE4DB, #9384D1);
+    z-index: 999;
+    /* position: absolute; */
+    text-align: center;
+    outline: none;
+    border: 1px solid #9384D1;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.details{
+    z-index: 999;
+    text-align: center;
+    margin: 30px;
+}
+
+.details p:first-child{
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.details p:not(:first-child){
+    margin: 20px;
+    color: #9384D1;
+    font-weight: bold;
+    font-size: 18px;
+}
